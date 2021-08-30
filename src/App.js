@@ -10,9 +10,9 @@ import ImageGrid from "./components/ImageGrid";
 import Modal from "./components/Modal";
 function App() {
   const { isLoading } = useAuth0();
-
-  if (isLoading) return <div>Loading...</div>;
   const [selectedImg, setSelectedImg] = useState(null);
+  if (isLoading) return <div>Loading...</div>;
+
   return (
     <>
       <LoginButton />
